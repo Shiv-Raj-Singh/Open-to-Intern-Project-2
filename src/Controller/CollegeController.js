@@ -9,7 +9,7 @@ const { checkName, checkUrl, validValue , strLower} = require('../Validator/vali
 const createCollege = async (req, res) => {
 
     try {
-        const { name, fullName, logoLink } = req.body
+         const { name, fullName, logoLink } = req.body
 
         if (!validValue(name)) {
             return res.status(400).send({ status: false, message: 'Please Enter College Name😑😑😑' })
