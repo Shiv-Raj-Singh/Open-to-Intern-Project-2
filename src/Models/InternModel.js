@@ -25,9 +25,8 @@ const internSchema = new mongoose.Schema(
     isDeleted: {
       type: Boolean,
       default: false,
-    },
+    }
   },
-  { timestamps: true }
-);
+  { timestamps: true });
 
 module.exports = new mongoose.model("intern-Model", internSchema);

@@ -16,7 +16,11 @@ const collegeModel = new mongoose.Schema({
         required: true,
         Unique: true
     },
-    isDeleted: { type: Boolean, default: false }
-},{timestamps:true})
+    isDeleted: {
+        type: Boolean,
+        default: false
+    }
+},
+    { timestamps: true })
 
-module.exports= mongoose.model('College-Model',collegeModel)
+module.exports = mongoose.model('College-Model', collegeModel)
