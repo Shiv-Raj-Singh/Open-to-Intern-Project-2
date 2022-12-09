@@ -1,3 +1,4 @@
+
 const validValue = function (value) {
     if (typeof value === 'undefined' || value === null) {
         return false

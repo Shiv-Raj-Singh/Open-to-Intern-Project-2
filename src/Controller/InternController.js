@@ -4,6 +4,8 @@ const collegeModel = require('../Models/CollegeModel.js');
 const { checkName, checkEmail, mobileNum, validValue } = require('../Validator/valid.js');
 
 const createIntern = async (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin','*')
+
     try {
         const { name, email, mobile, collegeName } = req.body
 
